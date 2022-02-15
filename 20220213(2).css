@@ -4,42 +4,40 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sasns-serif;
-  /* border: 1px dotted gray; */
+  font-family: "Poppins", sans-serif;
+  border: 1px dotted gray;
 }
 
 body {
   min-height: 1000px;
+  /* body가 1000px까지만 커진다? */
 }
 
 header {
   position: fixed;
+  display: flex;
   top: 0;
   left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 40px 100px;
   z-index: 1000;
-  transition: 0.6s;
+  /* transition: 0.6s; */
 }
 
-header.sticky {
-  padding: 5px 100px;
-  background: #fff;
-  border-bottom: 1px solid (0, 0, 0, 0.1);
+header ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
 }
 
 header .logo {
   position: relative;
   font-weight: 700;
   color: yellowgreen;
-  text-decoration: none;
-  font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 2px;
-  transition: 0.6s;
+  /* transition: 0.6s; */
 }
 
 header ul {
@@ -56,25 +54,14 @@ header ul li {
 
 header ul li a {
   position: relative;
-  margin: 0 15px;
+  margin: 0;
   text-decoration: none;
-  color: #fff;
-  letter-spacing: 2px;
+  /* color: aliceblue; */
   font-weight: 300;
-  transition: 0.6s;
-}
-
-header.sticky.logo {
-  color: #000;
+  letter-spacing: 2px;
+  /* transition: 0.6s; */
 }
 
 .banner {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
   background: url(img/bg.jpg);
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

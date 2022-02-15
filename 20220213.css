@@ -10,7 +10,6 @@
 
 body {
   min-height: 1000px;
-  /* background-color: #000; */
 }
 
 header {
@@ -24,7 +23,12 @@ header {
   padding: 40px 100px;
   z-index: 1000;
   transition: 0.6s;
-  border: 1px solid #000;
+}
+
+header.sticky {
+  padding: 5px 100px;
+  background: #fff;
+  border-bottom: 1px solid (0, 0, 0, 0.1);
 }
 
 header .logo {
@@ -47,4 +51,30 @@ header ul {
 
 header ul li {
   position: relative;
+  list-style: none;
+}
+
+header ul li a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 300;
+  transition: 0.6s;
+}
+
+header.sticky.logo {
+  color: #000;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url(img/bg.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

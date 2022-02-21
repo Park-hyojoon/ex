@@ -23,7 +23,7 @@ header {
 header .logo {
   font-size: 2em;
   font-weight: 700;
-  color: white;
+  color: wheat;
   letter-spacing: 2px;
 }
 
@@ -39,7 +39,11 @@ header ul li {
 }
 
 header ul li a {
+  position: relative;
+  padding: 5px 10px;
+  display: inline-block;
   color: antiquewhite;
+  cursor: pointer;
 }
 
 .toggle {
